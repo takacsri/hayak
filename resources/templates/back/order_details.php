@@ -44,8 +44,8 @@ if(isset($_GET['id'])){
     <h3>Comanda #<?php echo $_GET['id']; ?></h3>
     <hr>
     <?php echo "<p>Data: $order_date</p>
-                <p>Total produse: 3 </p>
-                <p>Pret total: $order_amount</p>"; ?>
+                <p>Total produse: "; get_product_quantity_of_an_order($_GET['id']);
+          echo "</p><p>Pret total: $order_amount</p>"; ?>
         
 </div>
 <div class="col-md-4">

@@ -17,6 +17,7 @@
     <div class="container">
 
         <div class="row text-center">
+                <div class="col-sm-12"><h1 class="pb-2">Încearcă preparatele noastre!</h1></div>
                 <div class="col-sm-4 col-lg-4 col-md-4">
                     <div class="thumbnail">
                         <img src="../resources/uploads\spaghette-cu-creveti-crop.jpg">

@@ -5,10 +5,11 @@
     <!-- Page Content -->
     <div class="container">
 
-        <div class="row">
-        <h1>Toate produsele</h1>
+    <h1>Toate produsele</h1>
 
-        <hr>
+    <hr>
+
+        <div class="row">
         
         <!-- Categories -->
         <?php include(TEMPLATE_FRONT . DS . "side_nav.php"); ?>

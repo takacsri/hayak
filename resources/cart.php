@@ -116,20 +116,18 @@
 
 }
 
-/*
-function show_paypal(){
+
+function show_finalizeaza(){
 
     if(isset($_SESSION['item_quantity']) && $_SESSION['item_quantity'] >= 1){ 
-    $paypal_button = <<<DELIMETER
+    $finalizeaza_button = <<<DELIMETER
     
-    <input type="image" name="upload" 
-    src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" 
-    alt="PayPal - The safer, easier way to pay online">
+    <a class="btn btn-primary" href="finalizeaza.php">Finalizează comanda</a>
 
 DELIMETER;
 
-return $paypal_button;
-}} */
+return $finalizeaza_button;
+}} 
 
 function process_transaction(){
 

@@ -58,7 +58,7 @@
 </tbody>
 
 </table>
-<a class="btn btn-primary" href="finalizeaza.php">Finalizează comanda</a>
+<?php echo show_finalizeaza(); ?>
 
  </div>
 

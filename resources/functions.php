@@ -103,6 +103,21 @@ function get_number_of_rows($type){
 }
 
 
+function get_product_quantity_of_an_order($id){
+
+    $number=0;
+
+    $query = query("SELECT product_quantity FROM order_items where order_id=$id");
+    confirm($query);
+
+    while($row = fetch_array($query)) {
+     
+      $number+=$row['product_quantity'];
+    }
+
+    echo $number;
+}
+
 
 
 function get_products_in_cat_page(){
@@ -339,14 +354,16 @@ function add_product(){
         $product_weight = escape_string($_POST['product_weight']);
         $product_image = escape_string($_FILES['file']['name']);
         $image_temp_location = escape_string($_FILES['file']['tmp_name']);
-        
-        move_uploaded_file($image_temp_location , UPLOAD_DIRECTORY . DS . $product_image);
+
+        $file_destination = UPLOAD_DIRECTORY . DS . $product_image;
+        move_uploaded_file($image_temp_location, $file_destination);
+    
 
         $query = query("INSERT INTO product(product_title, cat_id, product_price, product_description, product_short_description, product_weight, product_image) 
           VALUES ('{$product_title}', '{$cat_id}', '{$product_price}', '{$product_description}', '{$short_desc}', '{$product_weight}', '{$product_image}')");
         $last_id = last_id();
         confirm($query);
-        set_message("New product with id {$last_id} just added");
+        set_message("Ai adaugat cu succes produsul cu id {$last_id}");
         redirect("index.php?products");
     }
 }

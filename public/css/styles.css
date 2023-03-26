@@ -6,6 +6,11 @@ body {
     padding-top: 100px; 
 }
 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 .btn-primary{
     border-radius:0;

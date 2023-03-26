@@ -6,18 +6,10 @@
                             <div class="carousel-inner">
                                 <div class="item active">
                                     <img class="slide-image" src="../resources/uploads/paste-carbonara.jpg" alt="">
-                                    <div class="black"></div>
-                                        <div class="carousel-caption ">
-                                                 <h2>Încearcă preparatele noastre!</h2>
-                                        </div>
         
                                 </div>
                                 <div class="item">
                                     <img class="slide-image" src="../resources/uploads/pizza-hayak-.jpg" alt="">
-                                    <div class="black"></div>
-                                        <div class="carousel-caption ">
-                                                 <h2>Încearcă preparatele noastre!</h2>
-                                        </div>
                                     
                                 </div>
                             </div>
