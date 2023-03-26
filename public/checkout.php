@@ -19,8 +19,7 @@
            <th>Produs</th>
            <th>Preț</th>
            <th>Cantitate</th>
-           <th>Sub-total</th>
-     
+           <th>Sub-total</th>   
           </tr>
         </thead>
         <tbody>

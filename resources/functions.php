@@ -1,7 +1,5 @@
 <?php
 
-$upload_directory = "uploads";
-
 //helper fuctions
 
 function last_id(){
@@ -291,6 +289,8 @@ function show_customer_email($customer_id){
 }
 
 /*** ADMIN PRODUCTS ***/
+
+$upload_directory = "uploads";
 
 function display_image($picture){
 
